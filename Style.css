@@ -121,6 +121,9 @@ header.abajo ul li a{
 }
 
 #seccion1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
   display: flex;
   width: 80%;
@@ -131,14 +134,11 @@ header.abajo ul li a{
   width: 50%;
   float: left;
   
-
 }
 .info-nosotros{
   width: 50%;
   float: right;
 }
-
-
 .img-nosotros img{
   position: relative;
   width: auto;
@@ -146,36 +146,47 @@ header.abajo ul li a{
   margin-left: 75px;
   border-radius: 50%;
   
-
-}
-
-#seccion1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
 }
 
 .info-nosotros h4{
   font-size: 25px;
   padding: 20px;
   text-align: center;
- 
 }
 .info-nosotros p{
-
-  margin-inline:  20%;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  width: 60%;
+}
+
+#seccion2{
+  text-align: center;
+ 
+
+}
+
+.mision{
+  background-color: #00ccb3;
+  background-image: url(img/avion.png);
+  background-repeat: no-repeat;
+   height: 1900px;
+}
+.info{
+  display: inline-block; 
+  padding: 30px;
+}
+.mision img{
+  width: 370px;
+  height: auto;
+  margin-right:100px;
+  margin-left: 100px;
   
 }
 
+.info p {
+  vertical-align: middle;
+  margin-right: 100px;
+  margin-left: 100px;
+  width: 350px;
+  text-align: center;
+}
 
-
-
-
-
-
- 
