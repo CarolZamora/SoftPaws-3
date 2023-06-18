@@ -29,6 +29,23 @@
 </div>
 </header>
 
+<div class="buscar">
+<div class="input-box">
+  <input type="text" placeholder="search...">
+  <span class="busqueda">
+  <i class="ri-search-line buscar-icon"></i>
+  </span>
+  <i class="ri-close-line cerrar-icon"></i>
+</div>
+</div>
+<main class="adoptanos">
+<section id="adopta">
+  
+
+</section>
+
+</main>
+
 
 <footer>
   <img src="../img/logo-h.png" alt="logo" class="logo">
@@ -53,18 +70,8 @@
     
 </body>
 <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-<script>
-    function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.toggle("open");
-}
 
-
-
-
-
-    </script>
-<script src="./js/script.js"></script>
+<script src="../js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </html>

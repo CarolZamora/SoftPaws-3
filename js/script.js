@@ -1,23 +1,12 @@
-<script>
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  grabCursor: true,
-  autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-</script>
+
+let inputbox = document.querySelector(".input-box"),
+    busqueda = document.querySelector(".busqueda"),
+     cerrarIcon = document.querySelector(".cerrar-icon");
+   
+   busqueda.addEventListener("click", () => inputbox.classList.add("open"));
+   cerrarIcon.addEventListener("click", () => inputbox.classList.remove("close"));
+
+
+
+
+
