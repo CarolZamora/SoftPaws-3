@@ -9,8 +9,9 @@
     text-decoration: none;
     list-style: none;
 }
+
 :root{
-    --bg-color: #e8eaf1;
+    --bg-color: rgb(241, 241, 241);
     --text-color:#080f0a;
     --main-color:#1dcfb8;
 }
@@ -34,12 +35,15 @@ header{
     padding: 28px 12%;
     transition: all .50s  ease;
 }
+header.abajo{
+  background: #fff;
+  box-shadow: -5px 6px 23px 13px rgba(0,0,0,0.1);
+  padding: 5px;
+}
 header a{
     text-decoration: none;
 }
 .logo-nav{
-    
-   
     display: flex;
     align-items: center;
     text-shadow: 1px 3px 4px #1dcfb8 ;
@@ -103,97 +107,17 @@ header a{
 .usuario a:hover{
     color: var(--main-color);
 }
-#menu{
-    font-size: 35px;
-    color: var(--text-color);
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
 
-}
 /*-------------Fin lemento de navegacion-menu-------------*/
+/*------------Elemento de busqueda---------------*/
 
-/*---------------Footer---------------*/
-footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 8%;
-    background-color: #063519;
+.buscar{
+    margin:10vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
-  .logo{
-    height: 80px;
-    margin-bottom: 1rem;
-  }
-  .social-icons-container, .footer-menu-container{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-  .social-icon{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid  rgb(109, 247, 235);
-    background-image: url();
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    margin: 1rem;
-  }
-  .social-icon:hover{
-    background-color: rgb(126, 192, 236);
-    
-  }
-  .social-icon:nth-of-type(2){
-    background-image: url(img/youtube.png);
-  }
-  .social-icon:nth-of-type(3){
-    background-image: url(img/instagram.png);
-  }
-  .social-icon:nth-of-type(4){
-    background-image: url(img/banner2.png);
-  }
-  .footer-menu-container{
-    list-style-type: none;
-    color: white;
-    font-size: 18px;
   }
   
-  .menu-item{
-    font-family: 'Alegreya', cursive;
-    font-size: 20px;
-    margin: 1rem 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-  .menu-item:hover{
-    opacity: 1;
-  }
-  .copyright{
-    color: #5ee9ee;
-  
-    opacity: 0.3;
-    text-align: center;
-  }
-
-  /*------------Fin Footer-----------*/
-
-  /*------------Elemento de busqueda----------------*/
-
-  .buscar{
-    height: 24vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .input-box{
     position: relative;
     height: 50px;
@@ -234,13 +158,171 @@ footer{
     color:rgb(79, 171, 233);
     
   } 
+
    /*---------------Fin elemento de busqueda----------------*/
 
+    /*---------------Section Card-Adoptanos----------------*/
+
+    .container-adop{
+      display: grid;
+      place-content: center;
+  }
+  #seccion-adoptanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    
+  }
+    .adoptanos{
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 45px;
+  }
+  .adop{
+      width: 350px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0px 20px 40px;
+      border-radius: 20px;
+      transition: .3s;
+  }
+ 
+  .adop:hover{
+      transform: translateY(-15px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  } 
+  .image{
+      width:100%;
+      height: 60%;
+      display: grid;
+      place-content: center;
+  } 
+  .adop img{
+    width: 350px;
+    border-radius: 20px;
+
+  } 
+  .namePaws h3{
+    font-family: 'Alegreya', cursive;
+    font-size: 2em;
+    color: var(--textColor);
+  }
+
+  .adop p{
+      font-size: 18px;
+      line-height: 25px;
+  }
+  .boton{
+      bottom: 20px;
+      right: 20px;
+  }
+  .boton button{
+      box-shadow: 1px 3px 4px #1dcfb8 ;
+      padding: 10px 20px;
+      border-radius: 7px;
+      border: none;
+      background-color: #96F093;
+   
+      color: var(--sectionBack);
+      font-size: 18px;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: .5s;
+  }
+  .boton button:hover{
+      transform: scale(1.1);
+      
+  }
+
+    
+
+
+   /*---------------Fin section Card-Adoptanos----------------*/
+/*---------------Footer---------------*/
+footer{
+ width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #063519;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo{
+  height: 80px;
+  margin-bottom: 1rem;
+}
+.social-icons-container, .footer-menu-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.social-icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid  rgb(109, 247, 235);
+  background-image: url();
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+.social-icon:hover{
+  background-color: rgb(126, 192, 236);
+  
+}
+.social-icon:nth-of-type(2){
+  background-image: url(img/youtube.png);
+}
+.social-icon:nth-of-type(3){
+  background-image: url(img/instagram.png);
+}
+.social-icon:nth-of-type(4){
+  background-image: url(img/banner2.png);
+}
+.footer-menu-container{
+  list-style-type: none;
+  color: white;
+  font-size: 18px;
+}
+
+.menu-item{
+  font-family: 'Alegreya', cursive;
+  font-size: 20px;
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.menu-item:hover{
+  opacity: 1;
+}
+.copyright{
+  color: #5ee9ee;
+
+  opacity: 0.3;
+  text-align: center;
+}
+
+
+  /*------------Fin Footer-----------*/
+
+  
 
 
   /*-----------------------------RESPONSIVE------------------------------*/
 
   /*Busqueda responsive*/
+  
   @media (max-width: 800px){
     .input-box{
         max-width: 60px;
@@ -250,7 +332,7 @@ footer{
         transition:  all 0.6s cubic-bezier(0.68, -0.55, 1.55);
       }
       .input-box.open input{
-        padding: 0 15px;
+        padding: 0 15px 0 65px;
       }
       .input-box.open .busqueda{
         border-radius: 6px;
